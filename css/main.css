@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
+    font-smooth: always;
 }
 .hero{
     height: 100dvh;
@@ -17,7 +18,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 130px;
-    background-color:rgb(240, 239, 239);
+    background-color:rgb(246, 245, 245);
     color: black;
 }
 .logo a{
@@ -35,6 +36,11 @@ header{
     padding: 0 10px;
     font-weight: normal;
     letter-spacing: 1px;
+    transition: 5s ease-in-out;
+}
+.menu nav a:hover{
+    text-decoration: overline;
+    transition: 2s ease-in-out;
 }
 .active{
     transform: translateX(0)!important;
@@ -66,7 +72,7 @@ header{
     font-weight: normal;
     line-height: 28px;
     text-transform: capitalize;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 .container-left button{
     background-color: rgb(232, 242, 251);
@@ -75,6 +81,7 @@ header{
     border: none;
     font-size: 1rem;
     padding: 10px 20px;
+    margin: 10px 0;
     border-radius: 7px;
 
 }
@@ -83,11 +90,22 @@ header{
     margin: 0 auto;
     text-align: center;
 }
-.container-right img{
+.container-right img {
     height: 270px;
     width: 270px;
     border-radius: 50%;
     object-fit: cover;
     vertical-align: middle;
-    border: 5px solid ;
+    border: 10px solid transparent; /* Set the initial border color */
+    animation: a1 1s  infinite alternate;
+    transition: 1s;
 }
+@keyframes a1{
+    00%{
+        border-color: transparent;
+    }
+    100%{
+        border-color:  #f7f3f3;
+    }
+}
+
