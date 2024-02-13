@@ -1,0 +1,14 @@
+@media(max-width:767px){
+    header{padding: 10px 15px;}
+    .mybtn{display: block;padding: 10px;cursor: pointer;}
+    .menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 70%;
+        background-color: antiquewhite;
+        transform: translateX(100%);
+    }
+    .menu nav a{padding: 10px 10px;display: flex;flex-direction: column;}
+}
