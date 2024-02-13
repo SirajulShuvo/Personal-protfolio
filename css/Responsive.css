@@ -1,4 +1,7 @@
 @media(max-width:767px){
+    .hero{
+        height: auto;
+    }
     header{padding: 10px 15px;}
     .mybtn{display: block;padding: 10px;cursor: pointer;}
     .menu{
@@ -7,8 +10,22 @@
         right: 0;
         height: 100%;
         width: 70%;
-        background-color: antiquewhite;
+        background-color:rgb(255, 255, 255);
         transform: translateX(100%);
+        transition: opacity 0.5s ease;
+    }
+    .menu.active {
+        transform: translateX(0)!important; /* Move the menu in from the right when it's active */
     }
     .menu nav a{padding: 10px 10px;display: flex;flex-direction: column;}
+    .hero-content{height: auto;}
+    .container{width: 100%;flex-direction: column;margin-top: 30px;}
+    .container-left{
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .container-right{width: 100%;text-align: center;}
 }

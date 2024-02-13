@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
-/* google font's */
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap') */
-
 .hero{
     height: 100dvh;
     width: 100%;
@@ -17,25 +16,78 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
-    background-color: black;
-    color: white;
+    padding: 10px 130px;
+    background-color:rgb(240, 239, 239);
+    color: black;
 }
 .logo a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.2rem;
 }
 .mybtn{
     display: none;
 }
 .menu nav a{
-    color: white;
-    font-size: 1.2rem;
+    color: black;
+    font-size: 17px;
     text-decoration: none;
     padding: 0 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
 }
 .active{
     transform: translateX(0)!important;
-    transition: 1s ease!important;
+    transition: all ease 1s!important;
+}
+/* header end */
+/* Hero content start*/
+.hero-content{
+    height: 90vh;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.container-left{
+    width: 50%;
+}
+.container-left p{
+    font-size: 15px;
+    margin: 5px 0;
+    line-height: 28px;
+}
+.container-left h2,h3{
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 28px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.container-left button{
+    background-color: rgb(232, 242, 251);
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 7px;
+
+}
+.container-right{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-right img{
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    border: 5px solid ;
 }
