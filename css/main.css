@@ -18,7 +18,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 130px;
-    background-color:rgb(246, 245, 245);
+    background-color: rgb(232, 242, 251);
     color: black;
 }
 .logo a{
@@ -37,10 +37,20 @@ header{
     font-weight: normal;
     letter-spacing: 1px;
     transition: 5s ease-in-out;
+    position: relative;
 }
-.menu nav a:hover{
-    text-decoration: overline;
-    transition: 2s ease-in-out;
+.menu nav a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 0%;
+    height: 2px;
+}
+.menu nav a:hover::after{
+    width: 100%;
+    transition: all ease 1s;
 }
 .active{
     transform: translateX(0)!important;
@@ -66,13 +76,14 @@ header{
     font-size: 15px;
     margin: 5px 0;
     line-height: 28px;
+    letter-spacing: 0.5px;
 }
 .container-left h2,h3{
     font-size: 2rem;
     font-weight: normal;
-    line-height: 28px;
     text-transform: capitalize;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+    letter-spacing: .5px;
 }
 .container-left button{
     background-color: rgb(232, 242, 251);
@@ -83,29 +94,20 @@ header{
     padding: 10px 20px;
     margin: 10px 0;
     border-radius: 7px;
-
+    box-shadow: 5px 5px 0 black;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 .container-right{
     width: 50%;
-    margin: 0 auto;
     text-align: center;
 }
 .container-right img {
-    height: 270px;
-    width: 270px;
+    height: 300px;
+    width:300px;
     border-radius: 50%;
     object-fit: cover;
     vertical-align: middle;
-    border: 10px solid transparent; /* Set the initial border color */
-    animation: a1 1s  infinite alternate;
-    transition: 1s;
+    border: 15px solid  rgb(232, 242, 251);
+    margin: 0 auto;
 }
-@keyframes a1{
-    00%{
-        border-color: transparent;
-    }
-    100%{
-        border-color:  #f7f3f3;
-    }
-}
-

@@ -1,7 +1,8 @@
 @media(max-width:767px){
     .hero{
         height: auto;
-        padding: 10px 0;
+        padding-bottom: 20px;
+        overflow: hidden;
     }
     header{padding: 10px 15px;}
     .mybtn{display: block;padding: 10px;cursor: pointer;}
@@ -19,6 +20,7 @@
         transform: translateX(0)!important; /* Move the menu in from the right when it's active */
     }
     .menu nav a{padding: 10px 10px;display: flex;flex-direction: column;}
+    .menu nav a::after{display: none;}
     .hero-content{height: auto;}
     .container{width: 100%;flex-direction: column;margin-top: 20px;}
     .container-left{
