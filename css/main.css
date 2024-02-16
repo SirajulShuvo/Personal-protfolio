@@ -6,6 +6,16 @@
     font-weight: normal;
     font-smooth: always;
 }
+h1,
+h2,
+h3,
+h4{
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: .5px;
+    margin: 12px 0;
+    text-transform: capitalize;
+}
 .hero{
     height: 100dvh;
     width: 100%;
@@ -18,8 +28,10 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 130px;
-    background-color: rgb(232, 242, 251);
+    background-color:#FCF8FF;
+    border-bottom:1px solid white ;
     color: black;
+    height: 60px;
 }
 .logo a{
     text-decoration: none;
@@ -56,11 +68,18 @@ header{
     transform: translateX(0)!important;
     transition: all ease 1s!important;
 }
+.sticky-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 /* header end */
 /* Hero content start*/
 .hero-content{
     height: 90vh;
     width: 100%;
+    background-color: #FBEAFF;
 }
 .container{
     width: 80%;
@@ -79,15 +98,8 @@ header{
     line-height: 28px;
     letter-spacing: 0.5px;
 }
-.container-left h2,h3{
-    font-size: 2rem;
-    font-weight: normal;
-    text-transform: capitalize;
-    margin-bottom: 14px;
-    letter-spacing: .5px;
-}
 .container-left button{
-    background-color: rgb(232, 242, 251);
+    background-color:#FCF8FF;
     color: black;
     outline: none;
     border: none;
@@ -109,6 +121,6 @@ header{
     border-radius: 50%;
     object-fit: cover;
     vertical-align: middle;
-    border: 15px solid  rgb(232, 242, 251);
+    border: 15px solid #FCF8FF;
     margin: 0 auto;
 }
