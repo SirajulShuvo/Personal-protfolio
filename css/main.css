@@ -124,3 +124,45 @@ header{
     border: 15px solid #FCF8FF;
     margin: 0 auto;
 }
+/* PROJECT START */
+.project-heading{
+    padding: 30px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+.project-colum{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.project1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.project-img img{
+ height: 350px;
+ width: 400px;
+ object-fit: cover;
+ border-radius: 10px;
+}
+.project-content{
+    margin: 0 30px;
+}
+.p-description{
+    line-height: 28px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    padding-right: 20px;
+}
+.p-link{
+    text-decoration: none;
+    background-color:#FBEAFF;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    margin: 10px 0;
+    border-radius: 7px;
+}

@@ -31,4 +31,10 @@
     }
     .container-left h2,h3{font-size: 1.5rem;}
     .container-right{width: 100%;text-align: center;}
+    /* project */
+    .project-colum{width: 100%;padding: 0 20px;margin: 0 auto;}
+    .project1{flex-direction: column;}
+    .project-img img{width: 300px;}
+    .project-content{margin: unset;}
+    .p-description{padding-right: 0px;}
 }
