@@ -1,2 +1,2 @@
 ## Project link
-https://sirajul420.github.io/Personal-protfolio/
+https://SirajulShuvo.github.io/Personal-protfolio/
