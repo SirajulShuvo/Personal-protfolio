@@ -1,40 +1,56 @@
-@media(max-width:767px){
-    .hero{
-        height: auto;
-        padding-bottom: 20px;
-        overflow: hidden;
+@media screen and (max-width:992px) {
+    body{
+        position: relative;
     }
-    header{padding: 0 10px;padding-top: 10px;}
-    .mybtn{display: block;padding: 10px;cursor: pointer;}
-    .menu{
+    .navbar{justify-content: space-between; padding: 20px 20px;margin: 0 10px;position: unset;}
+    .navigation{
+        height: 400px;
+        width: 80%;
         position: absolute;
-        top: 0%;
-        right: 0;
-        height: 100%;
-        width: 0%;
-        background-color:white;
-        transition:all ease 0.6s;
+        top: 100%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+        display: none;
+        justify-content: space-around;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transition: left 0.3s ease; /* Smooth transition */
     }
-    .menu.active {
-       width: 100%;
-       transition: all ease 0.6s; /* Move the menu in from the right when it's active */
+    .navitems{
+        padding: 30px 10px;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
     }
-    .menu nav a{padding: 10px 10px;display: flex;flex-direction: column;}
-    .menu nav a::after{display: none;}
-    .hero-content{height: auto;}
-    .container{width: 100%;flex-direction: column;margin-top: 0px;}
-    .container-left{
+    .closeIcon{
+        padding: 30px 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    .startIcon{display: block;cursor: pointer;}
+    .hero{position: relative;padding: 4rem 0rem;height: auto;}
+    .hero-content{flex-direction: column; padding: 0 10px;}
+    .hero-info{margin-top: 20px;padding: 20px;width: 100%;}
+    .hero-img{padding: 0 20px;position: relative;width: 100%;}
+    .hero-img img{
         width: 100%;
-        margin: 20px 0;
-        padding: 0 20px;
-        text-align: center;
+        object-fit: cover;
+        height: 100%;
     }
-    .container-left h2,h3{font-size: 1.5rem;}
-    .container-right{width: 100%;text-align: center;}
-    /* project */
-    .project-colum{width: 100%;padding: 0 20px;margin: 0 auto;}
-    .project1{flex-direction: column;}
-    .project-img img{width: 300px;}
-    .project-content{margin: unset;}
-    .p-description{padding-right: 0px;}
+    .scroll-down{margin-top: 10px}
+    .about-container{
+        padding: 0 10px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .about-img{width: 100%;text-align: center}
+    .about-img img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .about-content{width: 100%;padding: 20px}
 }

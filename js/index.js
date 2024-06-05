@@ -1,26 +1,27 @@
-// Responsive menubar
-function responsiveHeader(){
-    let menu = document.getElementById('menu');
-    let close = document.getElementById('close')
-    let menuIcon = document.getElementById('menuicon')
-    menuIcon.addEventListener('click',(e) => {
-        menu.classList.toggle('active')
+import { changeBackground } from "./darkWhite.js";
+
+changeBackground()
+
+
+
+
+const responsiveHeader = () =>{
+    let startIcon = document.querySelector('.startIcon');
+    console.log(startIcon)
+    let closeIcon = document.querySelector('.closeIcon');
+    let navBar = document.querySelector('.navigation');
+    console.log(navBar)
+    startIcon.addEventListener('click',(e) =>{
+        navBar.classList.add('show');
+        navBar.style.transition = '1s all linear';
     })
-    close.addEventListener('click',(e) => {
-        menu.classList.remove('active')
+    closeIcon.addEventListener('click',(e) =>{
+        navBar.classList.remove('show')
     })
 }
 responsiveHeader();
 
-// fixed header
-// function sticky(){
-//     let header = document.querySelector('header')
-// window.addEventListener('scroll',(e)=>{
-//     if(window.pageYOffset >= 90){
-//         header.classList.add('sticky-header');
-//     }else{
-//         header.classList.remove('sticky-header')
-//     }
-// })
-// }
-// sticky();
+
+
+
+
