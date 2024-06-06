@@ -131,6 +131,14 @@ header{
     border-radius: 10px;
     cursor: pointer;
 }
+.hero-info a button i{
+    font-weight: 900;
+    padding: 3px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 8px;
+}
 .hero-img{width: 50%;text-align: center;}
 .hero-img img {
     width: 300px;
@@ -237,4 +245,43 @@ header{
     cursor: pointer;
 }
 /* About end ............
+..........................*/
+
+/* Skill start ............
+..........................*/
+.skill{padding: 50px 0}
+.skill-hideTitle h1{
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    opacity: 0.1;
+    font-weight: bold;
+    color: rgb(91, 83, 83);
+}
+.skill-title{width: 200px;margin: 0 auto}
+.skill-title h1{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    color:rgb(85, 77, 77);
+    font-size: 30px;
+    position: relative;
+    margin-top:-40px ;
+}
+.span-barSkill{
+    height: 5px;
+    width: 40px;
+    background-color: var(--secand-color);
+    position: absolute;
+    right: 65px;
+}
+.skill-container{
+    padding: 50px;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Skill end ............
 ..........................*/

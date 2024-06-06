@@ -1,9 +1,5 @@
 import { changeBackground } from "./darkWhite.js";
-
 changeBackground()
-
-
-
 
 const responsiveHeader = () =>{
     let startIcon = document.querySelector('.startIcon');

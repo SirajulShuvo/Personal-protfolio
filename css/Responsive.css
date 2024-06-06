@@ -1,7 +1,5 @@
 @media screen and (max-width:992px) {
-    body{
-        position: relative;
-    }
+    body{position: relative}
     .navbar{justify-content: space-between; padding: 20px 20px;margin: 0 10px;position: unset;}
     .navigation{
         height: 400px;
