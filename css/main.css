@@ -283,5 +283,45 @@ header{
     display: flex;
     justify-content: space-between;
 }
+#education{
+    padding:10px 20px;
+    border-bottom: 2px solid var(--secand-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+#education p{font-size: 14px}
+.education-title button,.skill-heading button{
+    background-color: var(--secand-color);
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.skills{width: 40%}
+#skill{box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);margin: 10px 0;padding: 10px 10px}
+.text-skill{display: flex;justify-content: space-between;padding: 5px 0}
+.skill-content{
+    padding: 10px 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.skill-contenttext h1{font-weight: bold;font-size: 30px;padding: 5px 0}
+.skill-content P{width: 60%;font-size: 16px}
+.skill-line{
+    background-color: #555;
+    width: 100%;
+    border-radius: 10px;
+    height: 5px;
+}
+.skill-total{
+    background-color: #6a59d1;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+}
 /* Skill end ............
 ..........................*/
