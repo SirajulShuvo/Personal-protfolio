@@ -1,20 +1,16 @@
+/* Google font link */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    /* Primary color */
     --first-color:#0e2431;
     --secand-color:#6a59d1;
     --third-color:#777;
-    /* boday  background color */
     --boday-bg-color:#fefefe;
     --card-bg-color:#fff;
     --line-color:#d7d7d7;
-    /* font size */
     --small-font-size:0.9em;
     --normal-font-size:1em;
-    /* Scrollbar color */
     --scroll-bar-color:#c5cadf;
-    /* Box shadow */
     --box-shadow:0px 0px 20px rgb(0 0 0 / 10%);
 }
 *{
@@ -24,7 +20,18 @@
     font-family: "Poppins", sans-serif;
     font-weight: normal;
 }
-html{scroll-behavior: smooth}
+/* custom Scrool bar start ...............
+.....................................*/
+::-webkit-scrollbar {width: 12px;height: 12px!important}
+::-webkit-scrollbar-track {background: #f1f1f1}
+::-webkit-scrollbar-thumb {background: #888}
+::-webkit-scrollbar-thumb:hover {background: #555}
+
+/* custom Scrool bar end ...............
+.....................................*/
+
+html{scroll-behavior: smooth;scrollbar-width: thin; /* Can be 'auto', 'thin', or 'none' */
+    scrollbar-color: #888 #f1f1f1; /* thumb color and track color */}
 body{
     color: var(--first-color);
     background-color: var(--boday-bg-color);
@@ -32,7 +39,8 @@ body{
 }
 a{text-decoration: none}
 li{list-style: none}
-/* Hedader section start */
+/* Hedader section start.........
+...............................*/
 header{
     position: fixed;
     top: 0;
@@ -63,7 +71,8 @@ header{
 }
 .startIcon{display: none;cursor: pointer}
 .closeIcon{display: none}
-/* Header section end */
+/* Header section end .................
+.....................................*/
 .hero{
     position: relative;
     padding: 4rem 4rem;
@@ -84,6 +93,7 @@ header{
 .dark-mood{
     position: fixed;
     top: 20%;
+    cursor: pointer;
     right: 0;
     background-color: #d3d3d3;
     color: black;
@@ -96,7 +106,6 @@ header{
     align-items: center;
     margin-right: 20px;
 }
-/* #sun{display: none;} */
 .hero-icon a{
     margin: 5px 0;
     display: inline-block;
@@ -120,6 +129,7 @@ header{
     background-color: var(--secand-color);
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 .hero-img{width: 50%;text-align: center;}
 .hero-img img {
@@ -137,33 +147,53 @@ header{
     justify-content: center;
     align-items: center;
     color: var(--secand-color);
+    cursor: pointer;
 }
  .scroll-down i{
     padding: 0 10px;
-    animation: a1 0.5s linear infinite;
+    animation: spin 3s linear infinite;
     display: inline-block;
     color: var(--secand-color);
+}
+
+
+/* Keyframes for the spin animation */
+@keyframes spin {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(5px);
+    }
 }
 /* About start ............
 ..........................*/
 
 .about{padding: 50px 0}
+.about-hideTitle h1{
+    font-size: 40px;
+    margin: 0 auto;
+    width: 200px;
+    opacity: 0.1;
+    font-weight: bold;
+    color: rgb(91, 83, 83);
+}
 .about-title{width: 200px;margin: 0 auto}
 .about-title h1{
     text-align: center;
     padding: 20px 0;
-    font-weight: 500;
-    color: #929495;
+    font-weight: bold;
+    color:rgb(85, 77, 77);
     font-size: 30px;
     position: relative;
+    margin-top:-40px ;
 }
-
 .span-bar{
     height: 5px;
     width: 40px;
     background-color: var(--secand-color);
     position: absolute;
-    right: 38px;
+    right: 30px;
 }
 .about-container{
     padding: 50px;
@@ -204,6 +234,7 @@ header{
     padding: 10px;
     border-radius: 10px;
     margin: 10px 0;
+    cursor: pointer;
 }
 /* About end ............
 ..........................*/

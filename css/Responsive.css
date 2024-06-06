@@ -44,8 +44,10 @@
     .about-container{
         padding: 0 10px;
         width: 100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
+    /* About section start................
+    ..................................... */
     .about-img{width: 100%;text-align: center}
     .about-img img{
         object-fit: cover;
@@ -53,4 +55,6 @@
         width: 100%;
     }
     .about-content{width: 100%;padding: 20px}
+    /* About section end................
+    ..................................... */
 }
