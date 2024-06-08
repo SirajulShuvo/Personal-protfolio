@@ -31,4 +31,10 @@ export const changeBackground = () => {
         moon.style.display = 'block';
         sun.style.display = 'none';
     });
+    function saveData(){
+        
+    }
+    function displayData(){
+        
+    }
 };

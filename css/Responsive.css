@@ -22,9 +22,11 @@
         display: flex;
         justify-content: space-around;
     }
+    #list{color: black!important}
     .closeIcon{
         padding: 30px 10px;
         margin-top: 20px;
+        color: black;
         cursor: pointer;
         display: block;
     }
