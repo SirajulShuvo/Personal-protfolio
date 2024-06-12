@@ -75,7 +75,7 @@ header{
 .....................................*/
 .hero{
     position: relative;
-    padding: 4rem 4rem;
+    padding: 6rem 4rem;
     margin: 0 auto;
     width: 100%;
     flex-direction: column;
@@ -156,6 +156,7 @@ header{
     align-items: center;
     color: var(--secand-color);
     cursor: pointer;
+    margin-top: 70px;
 }
  .scroll-down i{
     padding: 0 10px;
@@ -249,7 +250,11 @@ header{
 
 /* Skill start ............
 ..........................*/
-.skill{padding: 50px 0}
+.skill{
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
+}
 .skill-hideTitle h1{
     font-size: 40px;
     margin: 0 auto;
@@ -277,9 +282,8 @@ header{
     right: 65px;
 }
 .skill-container{
-    padding: 50px;
+    padding: 50px 0;
     margin: 0 auto;
-    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -303,13 +307,13 @@ header{
 #skill{box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);margin: 10px 0;padding: 10px 10px}
 .text-skill{display: flex;justify-content: space-between;padding: 5px 0}
 .skill-content{
-    padding: 10px 50px;
-    width: 80%;
+    padding: 10px 0;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
 }
-.skill-contenttext h1{font-weight: bold;font-size: 30px;padding: 5px 0}
+.skill-contenttext h1{font-weight: bold;font-size: 30px;padding: 5px 0;color: rgb(85, 77, 77);
+}
 .skill-content P{width: 60%;font-size: 16px}
 .skill-line{
     background-color: #555;
@@ -342,4 +346,52 @@ header{
     border-radius: 10px;
 }
 /* Skill end ............
+..........................*/
+
+/* Service start ............
+..........................*/
+.service{padding: 50px 0;width: 80%;margin: 0 auto}
+.service-hide-title h1{
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    opacity: 0.1;
+    font-weight: bold;
+    color: rgb(91, 83, 83);
+}
+.service-titile{width: 200px;margin: 0 auto}
+.service-titile h1{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    color:rgb(85, 77, 77);
+    font-size: 30px;
+    position: relative;
+    margin-top:-40px ;
+}
+.servicecard-heading h1{
+    color: rgb(85,77, 77);
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px 0;
+}
+.service-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.serivice-card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #6a59d1;
+    padding: 30px 50px;
+    width: 23%;
+    border-radius: 10px;
+}
+.card-icon i{color: #6159d1;font-size: 30px;padding: 10px 0}
+.serivice-card h3{font-weight: bold}
+.serivice-card a{font-size: 14px;padding: 10px 0;display: inline-block}
+.serivice-card a i{font-size: 14px;padding-top: 5px}
+/* Service end ............
 ..........................*/
