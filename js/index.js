@@ -3,9 +3,3 @@ import { changeBackground } from "./darkWhite.js";
 
 responsiveHeader();
 changeBackground();
-
-
-
-
-
-
