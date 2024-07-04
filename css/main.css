@@ -435,4 +435,54 @@ header{
   }
 
   
-  
+.container-contact{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-left,.contact-right{
+    width: 50%;
+}
+form{
+    padding: 20px 10px;
+}
+form input{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #c6c0f5;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+}
+form input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+form textarea{
+    width: 100%;
+    padding: 10px;
+    background-color: #c6c0f5;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+}
+form textarea::placeholder{
+    color: white;
+}
+.phone{
+    display: flex;
+    align-items:center;
+    margin: 10px 0;
+}
+.phone-icon{
+    margin-right:  20px;
+}
+.left-heading h3{
+    font-size: 25px;
+}

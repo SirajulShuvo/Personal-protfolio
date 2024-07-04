@@ -83,4 +83,10 @@
         align-items: center;
       }
       .project-card {max-width: 100%}
+      .container-contact{width: 100%;flex-direction: column;padding: 0 20px;}
+      .contact-left,.contact-right{width: 100%}
+      .phone{
+        padding: 0 10px;
+      }
+
 }
