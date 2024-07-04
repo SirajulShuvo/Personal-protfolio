@@ -88,5 +88,8 @@
       .phone{
         padding: 0 10px;
       }
+    .footer-container{width: 100%;flex-direction: column}
+    .footer-link ul {flex-direction: column-reverse}
+    .footer-link a{margin: 10px 0;}
 
 }

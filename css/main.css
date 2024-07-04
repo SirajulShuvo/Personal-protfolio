@@ -393,6 +393,8 @@ header{
 .serivice-card a i{font-size: 14px;padding-top: 5px}
 /* Service end ............
 ..........................*/
+/* Project start ............
+..........................*/
 
 #projects {padding: 40px 0px;background-color: #fff} 
   .projects-grid {
@@ -426,15 +428,23 @@ header{
   .project-card button {
     padding: 10px 20px;
     background-color: #4caf50;
-    color: white!important;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     margin: 10px 0;
     border: none;
   }
+  .project-card button a{
+    color: white;
+  }
+  /* Project end ............
+..........................*/
 
-  
+/* Contact start ............
+..........................*/
+
+  /* Contact section start */
 .container-contact{
     display: flex;
     width: 80%;
@@ -442,12 +452,8 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.contact-left,.contact-right{
-    width: 50%;
-}
-form{
-    padding: 20px 10px;
-}
+.contact-left,.contact-right{width: 50%}
+form{padding: 20px 10px}
 form input{
     width: 100%;
     padding: 15px 10px;
@@ -458,10 +464,7 @@ form input{
     border-radius: 5px;
     color: white;
 }
-form input::placeholder{
-    color: white;
-    font-weight: bold;
-}
+form input::placeholder{color: white;font-weight: bold}
 form textarea{
     width: 100%;
     padding: 10px;
@@ -472,17 +475,42 @@ form textarea{
     border-radius: 5px;
     color: white;
 }
-form textarea::placeholder{
-    color: white;
-}
+form textarea::placeholder{color: white}
 .phone{
     display: flex;
     align-items:center;
     margin: 10px 0;
 }
-.phone-icon{
-    margin-right:  20px;
+.phone-icon{margin-right:  20px}
+.left-heading h3{font-size: 25px}
+/* Contact end ............
+..........................*/
+
+.footer{
+    background-color: #6a59d1;
+    color: white;
+    padding: 50px 0;
 }
-.left-heading h3{
-    font-size: 25px;
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-link ul {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-link a{
+    margin: 0 10px;
+    color:white;
+    font-weight: bold;
+}
+.footer-right a{
+    color: white;
+    margin: 10px;
+    font-size: 20px;
 }
