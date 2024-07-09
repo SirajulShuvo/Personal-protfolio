@@ -12,9 +12,9 @@ export const responsiveHeader = () =>{
     closeIcon.addEventListener('click',(e) =>{
         navBar.classList.remove('show')
     })
-    list.forEach((link) =>[
+    list.forEach((link) =>{
         link.addEventListener('click',(e) =>{
             navBar.classList.remove('show')
         })
-    ])
+  })
 }
