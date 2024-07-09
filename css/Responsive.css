@@ -32,7 +32,7 @@
     }
     .startIcon{display: block;cursor: pointer;}
     .hero{position: relative;padding: 4rem 0rem;height: auto;}
-    .hero-content{flex-direction: column; padding: 0 10px;}
+    .hero-content{flex-direction: column; padding: 0 10px;margin-top: 0;}
     .hero-info{margin-top: 20px;padding: 20px;width: 100%;}
     .hero-img{padding: 0 20px;position: relative;width: 100%;}
     .hero-img img{

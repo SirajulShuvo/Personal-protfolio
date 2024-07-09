@@ -87,7 +87,7 @@ header{
     align-items: center;
     padding: 0 50px;
     width: 100%;
-
+    margin-top: 50px;
 }
 .hero-icon{
     display: flex;
@@ -219,6 +219,18 @@ header{
     transition: opacity 1s ease, transform 1s ease;
 }
 .section-animation.show-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* fead right animation end */
+
+/* fead right animation start */
+.section-animation2{
+    opacity: 0;
+    transform: translateX(-100%);;
+    transition: opacity 1s ease, transform 1s ease;
+}
+.section-animation2.show-animation2 {
     opacity: 1;
     transform: translateX(0);
 }

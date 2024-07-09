@@ -3,6 +3,7 @@ export const responsiveHeader = () =>{
     console.log(startIcon)
     let closeIcon = document.querySelector('.closeIcon');
     let navBar = document.querySelector('.navigation');
+    let list = document.querySelectorAll('#list')
     console.log(navBar)
     startIcon.addEventListener('click',(e) =>{
         navBar.classList.add('show');
@@ -11,4 +12,9 @@ export const responsiveHeader = () =>{
     closeIcon.addEventListener('click',(e) =>{
         navBar.classList.remove('show')
     })
+    list.forEach((link) =>[
+        link.addEventListener('click',(e) =>{
+            navBar.classList.remove('show')
+        })
+    ])
 }
