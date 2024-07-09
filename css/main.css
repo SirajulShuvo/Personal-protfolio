@@ -153,8 +153,6 @@ header{
     display: inline-block;
     color: var(--secand-color);
 }
-
-
 /* Keyframes for the spin animation */
 @keyframes spin {
     from {
@@ -210,31 +208,23 @@ header{
     width: 50%;
 }
 /* fead right animation start */
-.section{
-    overflow: hidden;
-}
+.section{overflow: hidden}
 .section-animation{
     opacity: 0;
     transform: translateX(100%);;
     transition: opacity 1s ease, transform 1s ease;
 }
-.section-animation.show-animation {
-    opacity: 1;
-    transform: translateX(0);
-}
+.section-animation.show-animation {opacity: 1;transform: translateX(0)}
 /* fead right animation end */
 
-/* fead right animation start */
+/* fead left animation start */
 .section-animation2{
     opacity: 0;
     transform: translateX(-100%);;
     transition: opacity 1s ease, transform 1s ease;
 }
-.section-animation2.show-animation2 {
-    opacity: 1;
-    transform: translateX(0);
-}
-/* fead right animation end */
+.section-animation2.show-animation2 {opacity: 1;transform: translateX(0)}
+/* fead left animation end */
 
 .about-content h1{font-size: 30px;padding-bottom: 5px}
 .about-content h3{font-size: 20px; padding-top: 10px}

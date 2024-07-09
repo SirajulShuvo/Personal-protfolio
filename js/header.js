@@ -12,9 +12,17 @@ export const responsiveHeader = () =>{
     closeIcon.addEventListener('click',(e) =>{
         navBar.classList.remove('show')
     })
-    list.forEach((link) =>{
-        link.addEventListener('click',(e) =>{
-            navBar.classList.remove('show')
-        })
-  })
+    let activeLink = null;
+
+    list.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        if (activeLink) {
+          activeLink.style.color = ''; // Reset color of previously active link
+        }
+        navBar.classList.remove('show');
+        e.target.style.color = '#6a59d1'; // Set color for the currently clicked link
+        activeLink = e.target; // Update the active link reference
+      });
+    });
+    
 }
