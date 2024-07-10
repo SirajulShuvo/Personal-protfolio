@@ -199,10 +199,12 @@ header{
     justify-content: space-between;
 }
 .about-img{width: 50%;text-align: left}
-.about-img img{
+.about-img img {
     height: 350px;
     width: 430px;
-    border-radius: 10px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: 100% 10%;
 }
 .about-content{
     width: 50%;
@@ -457,7 +459,7 @@ header{
 .container-contact{
     display: flex;
     width: 80%;
-    margin: 50px auto;
+    margin: 70px auto;
     justify-content: space-between;
     align-items: center;
 }

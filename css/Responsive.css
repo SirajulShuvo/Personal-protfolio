@@ -78,7 +78,7 @@
     .projects-grid {
         width: 100%;
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 10px;
         align-items: center;
       }
       .project-card {max-width: 100%}
@@ -91,4 +91,9 @@
     .footer-link ul {flex-direction: column-reverse}
     .footer-link a{margin: 10px 0;}
 
+}
+@media screen and (max-width:1100px) {
+    .about-container{width: 90%;padding: 50px 0;}
+    .projects-grid {gap: 10px;width:90%}
+    .service{width: 90%;}
 }
