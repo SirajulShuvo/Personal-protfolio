@@ -63,17 +63,19 @@
     .skills{width: 100%;margin: 30px 0}
     .skill-content{padding: 10px 10px;width: 100%}
     .skill-content P{width: 100%;}
-    .education{
-        width: 100%;
-        margin-right: 0px;
-    }
+    .education{width: 100%;margin-right: 0px}
 
     /* Service section start................
     ..................................... */
-    .service{width: 100%;padding: 20px;}
+    .service{width: 100%;padding: 20px 10px;}
     .service-container{flex-direction: column}
     .serivice-card{ width: 100%;margin: 10px 0; }
     /* Service section end................
+    ..................................... */
+    /* Blog section end................
+    ..................................... */
+    .blog-container{width: 100%;grid-template-columns: auto;padding: 10px 20px}
+    /* Blog section end................
     ..................................... */
     .projects-grid {
         width: 100%;
@@ -81,15 +83,26 @@
         padding: 0 10px;
         align-items: center;
       }
-      .project-card {max-width: 100%}
-      .container-contact{width: 100%;flex-direction: column;padding: 0 20px;}
-      .contact-left,.contact-right{width: 100%}
-      .phone{
-        padding: 0 10px;
-      }
+    /* Project section end................
+    ..................................... */
+    .project-card {max-width: 100%}
+    /* Project section end................
+    ..................................... */
+    /* Contact section end................
+    ..................................... */
+    .container-contact{width: 100%;flex-direction: column;padding: 0 20px;}
+    .contact-left,.contact-right{width: 100%}
+    .phone{padding: 0 10px}
+    /* contact section end................
+    ..................................... */
+    /* Footer section end................
+    ..................................... */
     .footer-container{width: 100%;flex-direction: column}
     .footer-link ul {flex-direction: column-reverse}
     .footer-link a{margin: 10px 0;}
+    /* Footer section end................
+    ..................................... */
+
 
 }
 @media screen and (max-width:1100px) {

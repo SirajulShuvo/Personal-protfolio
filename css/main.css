@@ -57,12 +57,12 @@ header{
     align-items: center;
     margin:  0 auto;
     width: 100%;
-    padding: 20px 150px;
+    padding: 20px 130px;
     transform: 0.6s ease;
 }
 .navbar .logo{font-size: 1.5rem;color: black;font-weight: 600}
 .navitems a{font-size: var(--normal-font-size);color: black;font-weight: 600}
-.navitems a:not(:last-child){margin-right: 50px}
+.navitems a:not(:last-child){margin-right: 30px}
 .navitems a:hover{color: var(--secand-color)}
 .show{
     display: flex!important;
@@ -155,12 +155,8 @@ header{
 }
 /* Keyframes for the spin animation */
 @keyframes spin {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(5px);
-    }
+    from {transform: translateY(0)}
+    to {transform: translateY(5px)}
 }
 /* About start ............
 ..........................*/
@@ -206,9 +202,7 @@ header{
     object-fit: cover;
     object-position: 100% 10%;
 }
-.about-content{
-    width: 50%;
-}
+.about-content{width: 50%}
 /* fead right animation start */
 .section{overflow: hidden}
 .section-animation{
@@ -336,12 +330,7 @@ header{
     border-radius: 10px;
     height: 5px;
 }
-.skill-total{
-    background-color: #6a59d1;
-    /* width: 90%; */
-    height: 100%;
-    border-radius: 10px;
-}
+.skill-total{background-color: #6a59d1;height: 100%;border-radius: 10px}
 
 /* Skill end ............
 ..........................*/
@@ -390,20 +379,58 @@ header{
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.serivice-card:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
+.serivice-card:hover {transform: translateY(-10px);box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)}
 .card-icon i{color: #6159d1;font-size: 30px;padding: 10px 0}
 .serivice-card h3{font-weight: bold}
-.serivice-card ul li{
-    font-size: 14px;
-    margin: 10px 0;
-}
+.serivice-card ul li{font-size: 14px;margin: 10px 0}
 .serivice-card a{font-size: 14px;padding: 10px 0;display: inline-block}
 .serivice-card a i{font-size: 14px;padding-top: 5px}
 /* Service end ............
 ..........................*/
+.blog-section{padding: 50px 0}
+.blog-container{
+    width: 80%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-post{
+    margin: 20px 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    height: 220px;
+    border-radius: 7px;
+    border-bottom: 2px solid #6a59d1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+.blog-post h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.blog-post p{
+    font-size:16px;
+    padding: 10px 0;
+}
+.btn-read-more{
+    padding: 10px 20px;
+    background-color: #6a59d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+    border: none;
+    display: inline-block;
+}
 /* Project start ............
 ..........................*/
 
@@ -424,6 +451,7 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: auto;
     width: 500px;
+    margin: 20px 0;
     text-align: center;
     transition: transform 0.3s ease;
     border-top: 5px solid #6a59d1;
