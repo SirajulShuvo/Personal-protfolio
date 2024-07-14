@@ -402,7 +402,7 @@ header{
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px 10px;
-    height: 220px;
+    height: 250px;
     border-radius: 7px;
     border-bottom: 2px solid #6a59d1;
     transition: transform 0.3s, box-shadow 0.3s;
